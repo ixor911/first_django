@@ -3,38 +3,47 @@
 <html>
   <head lang="en">
     <title>... Igor student ...</title>
+    <link rel="stylesheet" type="text/css" href="styles/main_style.css">
     <meta charset="UTF-8">
   </head>
   <body>
-  <h1>Create an account</h1>
   <form class="accountCreation_form">
+    <h1>Create an account</h1>
+
     <div class="accountCreation_mainDiv">
 
-      <div class="accountCreation_mail_div">
+      <div class="accountCreation_mail_div accountCreation_div">
         <b>E-mail</b><br>
         <input type="text" class="accountCreation_normalInput">
       </div>
 
-      <div class="accountCreation_password_div">
-        <b>Password</b><br>
-        <input type="text" class="accountCreation_normalInput">
-        <br><b>Repeat Password</b><br>
-        <input type="text" class="accountCreation_normalInput">
+      <div class="accountCreation_password_div accountCreation_div">
+        <div class="accountCreation_normalElem">
+          <b>Password</b><br>
+          <input type="password" class="accountCreation_normalInput">
+        </div>
+        <div class="space"></div>
+        <div class="accountCreation_normalElem">
+          <b>Repeat Password</b><br>
+          <input type="password" class="accountCreation_normalInput">
+        </div>
       </div>
 
-      <div class="accountCreation_firstName_div">
-        <b>First name</b><br>
-        <input type="text" class="accountCreation_normalInput">
+      <div class="accountCreation_names_div accountCreation_div">
+        <div class="accountCreation_normalElem">
+          <b>First name</b><br>
+          <input type="text" class="accountCreation_normalInput">
+        </div>
+        <div class="space"></div>
+        <div class="accountCreation_normalElem">
+          <b>Last name</b><br>
+          <input type="text" class="accountCreation_normalInput">
+        </div>
       </div>
 
-      <div class="accountCreation_lastName_div">
-        <b>Last name</b><br>
-        <input type="text" class="accountCreation_normalInput">
-      </div>
-
-      <div class="accountCreation_sexSelect_div">
-        <b>Chose your sex</b>
-        <ul class="accountCreation_sexSelect_ul">
+      <div class="accountCreation_sexSelect_div accountCreation_div">
+        <b>Chose your sex</b><br>
+        <ul type="none" class="accountCreation_sexSelect_ul">
           <li class="accountCreation_sexSelect_li"><input type="radio" name="sex_radio" value="Male">Male</li>
           <li class="accountCreation_sexSelect_li"><input type="radio" name="sex_radio" value="Male">Female</li>
           <li class="accountCreation_sexSelect_li"><input type="radio" name="sex_radio" value="Male">Other</li>
@@ -42,17 +51,15 @@
 
       </div>
 
-      <div class="accountCreation_photoSelect_div">
-        <b>Your photo</b>
-        <input type="file" name="photo" class="accountCreation_photoSelect_input">
+      <div class="accountCreation_photoSelect_div accountCreation_div">
+        <b>Your photo</b><br>
+        <input type="file" id="photo" class="accountCreation_photoSelect_input">
+        <button><label for="photo">Select photo</label></button>
       </div>
 
-      <div class="accountCreation_submit_input">
-        <input type="submit" value="Submit">
-      </div>
-
-      <div class="accountCreation_submit_input">
-        <input type="reset" value="Reset">
+      <div class="accountCreation_submit_div accountCreation_div">
+        <input type="submit" class="accountCreation_submit_input" value="Submit">
+        <input type="reset" class="accountCreation_reset_input" value="Reset">
       </div>
 
     </div>

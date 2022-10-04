@@ -1,0 +1,26 @@
+.accountCreation_form, div{
+
+}
+.accountCreation_form {
+    text-align: center;
+    font-family: Cursive;
+}
+.accountCreation_div{
+    padding: 5px 0;
+}
+.accountCreation_names_div, .accountCreation_password_div, .space{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.accountCreation_normalElem {
+    padding: 5px 0;
+}
+.accountCreation_sexSelect_li, .accountCreation_sexSelect_ul {
+    display: inline;
+    padding: 0;
+}
+.accountCreation_photoSelect_input {
+    display: none;
+}
